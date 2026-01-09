@@ -5,7 +5,7 @@ public class Operadores {
 
         int a = 10;
         int b = 3;
-
+        //se utiliza parentecis por la precedencia de operadores, osea que se hace primero.
         System.out.println("a = " + a + ", b = " + b);
         System.out.println("Suma: a + b = " + (a + b));           // 13
         System.out.println("Resta: a - b = " + (a - b));          // 7
