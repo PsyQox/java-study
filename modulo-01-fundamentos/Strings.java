@@ -4,8 +4,8 @@ public class Strings {
         // ============ CREAR STRINGS ============
         // String es una clase (no primitivo), por eso se escribe con mayúscula
 
-        String s1 = "hola";                     // Forma común (literal)
-        String s2 = new String("hola 2");       // Con constructor (menos eficiente)
+        // String s1 = "hola";                     // Forma común (literal)
+        // String s2 = new String("hola 2");       // Con constructor (menos eficiente)
         String text = "Hola";
 
         // ============ MÉTODOS DE INFORMACIÓN ============
