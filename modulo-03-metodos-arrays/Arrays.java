@@ -61,7 +61,7 @@ public class Arrays {
         // - Índices van de 0 a length-1
         // - Acceder a índice fuera de rango = ArrayIndexOutOfBoundsException
         // - length es una PROPIEDAD, no método (sin paréntesis)
-        // - El tamaño es FIJO, para tamaño dinámico usa ArrayList
+        // - El tamaño es FIJO, para tamaño dinámico usa ArrayList 
     }
 }
 
