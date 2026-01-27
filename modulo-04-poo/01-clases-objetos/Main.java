@@ -6,8 +6,18 @@ public class Main {
         // Cada objeto es INDEPENDIENTE, tiene sus propios valores de atributos
         // Sintaxis: Clase nombreVariable = new Clase();
 
-        Carro carro = new Carro();   // Objeto 1
-        Carro carro2 = new Carro();  // Objeto 2 (independiente del primero)
+        // ============ USAR CONSTRUCTORES ============
+        // Java elige el constructor según los argumentos que le pases
+
+        // Constructor vacío: Carro()
+        Carro carro = new Carro();   // velocidad = 0.0, resto = null/0
+        Carro carro2 = new Carro();
+
+        // Constructor con 2 parámetros: Carro(marca, modelo)
+        Carro carro3 = new Carro("Ford", "Focus");  // marca y modelo asignados
+
+        // Constructor completo: Carro(marca, modelo, year, velocidad)
+        Carro carro4 = new Carro("Dodge", "RAM", 2020, 100.0);  // todo asignado
 
         // ============ ASIGNAR VALORES A ATRIBUTOS ============
         // Accedemos a los atributos con: objeto.atributo
