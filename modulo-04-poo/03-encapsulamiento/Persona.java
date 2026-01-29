@@ -7,6 +7,29 @@
 // - Puedes cambiar la implementación interna sin afectar el código externo
 // - Control total sobre cómo se leen y modifican los atributos
 
+// ============ MODIFICADORES DE ACCESO ============
+//
+// | Modificador   | Misma clase | Mismo paquete | Subclase | Cualquier lugar |
+// |---------------|-------------|---------------|----------|-----------------|
+// | private       |     ✓       |      ✗        |    ✗     |       ✗         |
+// | (default)*    |     ✓       |      ✓        |    ✗     |       ✗         |
+// | protected     |     ✓       |      ✓        |    ✓     |       ✗         |
+// | public        |     ✓       |      ✓        |    ✓     |       ✓         |
+//
+// * default = sin modificador (no escribes nada)
+//
+// Ejemplos:
+//   private String nombre;      → Solo esta clase puede acceder
+//   String apellido;            → (default) Clases del mismo paquete pueden acceder
+//   protected int edad;         → Mismo paquete + clases hijas (herencia)
+//   public String email;        → Cualquier clase puede acceder
+//
+// Buena práctica:
+//   - Atributos: private (ocultar datos)
+//   - Getters/Setters: public (acceso controlado)
+//   - Métodos auxiliares internos: private
+//   - Métodos que subclases necesitan: protected
+
 public class Persona {
 
     // ============ ATRIBUTOS PRIVADOS ============
