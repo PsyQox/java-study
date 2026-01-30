@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: mi-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mi_api_db
+    username: postgres
+    password: luis1615
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    org.springframework.web.servlet.DispatcherServlet: DEBUG
+
