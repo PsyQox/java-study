@@ -6,6 +6,7 @@ import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Transient;
@@ -23,7 +24,8 @@ public class Modelo implements Serializable{
     private Double price;
     private Double rating;
     //Ademas se  usa trancient porque Map no se puede guardar directamente en la db, para guardarlo es otra tabla con @ElementCollection mas complejo y convertirlo a JSON string ccon  @Convert
-    @Transient //No se guarda en la base de datos solamente existe en memoria
+    @ElementCollection
+    // @Transient //No se guarda en la base de datos solamente existe en memoria
 
     //Se usa porque las especificaciones no son staticas, por ej: una laptop tiene ram, memoria, pero una camisa tiene talla, color, como es dinamico no puedes hacer un atributo fijo para cada uno Map es como List y HashMap es como ArrayList
     private Map<String, String> specifications;
